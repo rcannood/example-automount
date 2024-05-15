@@ -1,0 +1,10 @@
+functionality:
+  name: viash_automount_example
+  resources:
+    - type: bash_script
+      text: |
+        cat "$meta_resources_dir/test_resource.txt"
+    - path: ./test_resource.txt
+platforms:
+  - type: docker
+    image: bash:4.0
